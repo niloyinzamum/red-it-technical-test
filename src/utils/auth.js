@@ -1,10 +1,8 @@
 require('dotenv').config();
 const JWT_SECRET = process.env.JWT_SAMPLE;
 
-console.log(JWT_SECRET);
 
 const authenticate = (token) => {
-  console.log(token);
   if (!token) {
     throw new Error('Authentication token required');
   }

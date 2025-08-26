@@ -6,9 +6,6 @@ const typeDefs = require('./schema/typeDefs');
 const resolvers = require('./schema/resolvers');
 const { authenticate } = require('./utils/auth');
 
-require('dotenv').config();
-const JWT_SECRET = process.env.JWT_SAMPLE;
-console.log(JWT_SECRET);
 
 const server = new ApolloServer({
   typeDefs,
